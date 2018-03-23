@@ -100,7 +100,7 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_4);
 	
-	// Enable bitcoin-cash only to show
+		// Enable bitcoin-cash only to show
 	$cryptoprice_5 = array(
         'name' => 'cryptoprice_5',
         'title' => 'Display Bitcoin-Cash Only?',
@@ -112,7 +112,7 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_5);
 	
-	// Enable litecoin only to show
+		// Enable litecoin only to show
 	$cryptoprice_6 = array(
         'name' => 'cryptoprice_6',
         'title' => 'Display Litecoin Only?',
@@ -183,12 +183,12 @@ function cryptoprice()
   $usd_price = 10;     # Let cost of elephant be 10$
   $ripple_price = round( $usd_price / $xrpprice , 8);
   
-  // Bitcoin-Cash price
+ 	 // Bitcoin-Cash price
   $bchprice = $data[3]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $bitcoincash_price = round( $usd_price / $bchprice , 8);
   
-  // Litecoin price
+  	// Litecoin price
   $ltcprice = $data[4]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $litecoin_price = round( $usd_price / $ltcprice , 8);
