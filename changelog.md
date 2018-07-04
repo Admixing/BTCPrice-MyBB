@@ -10,3 +10,8 @@
 
 1. New coins added to the plugin: Bitcoin Cash, Litecoin.
 2. Further coded into the core code to display all or selected.
+
+04/07/2018
+
+1. New coins added to the plugin: Eosio
+2. Further coded into the core code to display all or selected.
