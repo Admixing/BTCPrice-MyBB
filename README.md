@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/zOvjw4P.png" title="Logo"  />
+  <img src="https://i.imgur.com/vT3wXEu.png" title="Logo"  />
   <br>
   <a align="center" href="https://github.com/Admixing/CryptoPrice-MyBB">Click here to download</a>
   <br />
