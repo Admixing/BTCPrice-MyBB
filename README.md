@@ -13,9 +13,9 @@
 
 ## About
 Originally developed to be a Bitcoin plugin only by <a href="https://github.com/WallBB" target="_blank">WallBB</a>, I have made a number of changes to support a number of new coins as well as some brand new changes. This plugin will be supported for up to 20 different crypto currencies by the final release.
-<ul><li><b>Bug Tracking:</b> Found a bug? Please report it <a href="https://github.com/Admixing/CryptoPrice-MyBB/issues">here</a> on GitHub - or - on the MyBB forums <a href="#" target="_blank">here</a>.</li>
-<li><b>Suggestions:</b>If you have any suggestions, open a report <a href="https://github.com/Admixing/CryptoPrice-MyBB/issues">here</a> as an enhancement - or - on the MyBB forums <a href="#" target="_blank">here</a>.</li>
-<li><b>Feedback:</b>If you have any feedback, open a report <a href="https://github.com/Admixing/CryptoPrice-MyBB/issues">here</a> as an feedback - or - on the MyBB forums <a href="#" target="_blank">here</a></li></ul>
+<ul><li><b>Bug Tracking:</b> Found a bug? Please report it <a href="https://github.com/Admixing/CryptoPrice-MyBB/issues/new?template=bug_report.md">here</a> on GitHub - or - on the MyBB forums <a href="#" target="_blank">here</a>.</li>
+<li><b>Suggestions:</b>If you have any suggestions, open a report <a href="https://github.com/Admixing/CryptoPrice-MyBB/issues/new?template=feature_request.md">here</a> as an enhancement - or - on the MyBB forums <a href="#" target="_blank">here</a>.</li>
+<li><b>Feedback:</b>If you have any feedback, open a report <a href="https://github.com/Admixing/CryptoPrice-MyBB/issues/new?template=feedback.md">here</a> as an feedback - or - on the MyBB forums <a href="#" target="_blank">here</a></li></ul>
 
 ## Coins in plugin and coming soon.
 Here is the list of currently supported coins.
