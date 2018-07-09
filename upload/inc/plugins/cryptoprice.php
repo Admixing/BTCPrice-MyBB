@@ -4,7 +4,7 @@
  * Website: https://wallbb.co.uk
  *
  * Collaborated by Nasyr
- * Website: https://community.mybb.com/user-77508.html
+ * Website: https://welovemybb.com
  *
  */
 
@@ -28,9 +28,9 @@ function cryptoprice_info()
 	return array(
 		"name"			=> "Crypto Price",
 		"description"	        => "Displays the current Crypto Prices for multiple coins",
-		"website"		=> "https://github.com/Admixing/CryptoPrice-MyBB",
+		"website"		=> "https://wallbb.co.uk",
 		"author"		=> "WallBB & Nasyr",
-		"authorsite"	        => "https://github.com/Admixing/CryptoPrice-MyBB",
+		"authorsite"	        => "https://wallbb.co.uk",
 		"version"		=> "1.0",
 		//"guid" 		=> "",
 		"codename"		=> "cryptoprice",
@@ -100,7 +100,7 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_4);
 	
-		// Enable bitcoin-cash only to show
+	// Enable bitcoin-cash only to show
 	$cryptoprice_5 = array(
         'name' => 'cryptoprice_5',
         'title' => 'Display Bitcoin-Cash Only?',
@@ -112,17 +112,29 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_5);
 	
-		// Enable litecoin only to show
+	// Enable Eosio only to show
 	$cryptoprice_6 = array(
         'name' => 'cryptoprice_6',
-        'title' => 'Display Litecoin Only?',
-        'description' => 'Do you want to display Litecoin?',
+        'title' => 'Display EOS Only?',
+        'description' => 'Do you want to display EOS?',
         'optionscode' => 'yesno',
         'value' => '0',
         'disporder' => 6,
 	"gid" => $gid
     );
     $db->insert_query('settings', $cryptoprice_6);
+	
+	// Enable litecoin only to show
+	$cryptoprice_7 = array(
+        'name' => 'cryptoprice_7',
+        'title' => 'Display Litecoin Only?',
+        'description' => 'Do you want to display Litecoin?',
+        'optionscode' => 'yesno',
+        'value' => '0',
+        'disporder' => 7,
+	"gid" => $gid
+    );
+    $db->insert_query('settings', $cryptoprice_7);
 
 
     rebuild_settings();
@@ -183,20 +195,25 @@ function cryptoprice()
   $usd_price = 10;     # Let cost of elephant be 10$
   $ripple_price = round( $usd_price / $xrpprice , 8);
   
- 	 // Bitcoin-Cash price
+  // Bitcoin-Cash price
   $bchprice = $data[3]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $bitcoincash_price = round( $usd_price / $bchprice , 8);
   
-  	// Litecoin price
-  $ltcprice = $data[4]["price_usd"];    
+  // Eosio  price
+  $eosprice = $data[4]["price_usd"];    
+  $usd_price = 10;     # Let cost of elephant be 10$
+  $eos_price = round( $usd_price / $eosprice , 8);
+  
+  // Litecoin price
+  $ltcprice = $data[5]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $litecoin_price = round( $usd_price / $ltcprice , 8);
 
 		// All coins online
     if($mybb->settings['cryptoprice_1'] == 1)
     {
-		$cryptoprice = "BTC: $" . "$btcprice <br /> ETH: $" . "$ethprice <br /> XRP: $" . "$xrpprice <br /> BCH: $" . "$bchprice <br /> LTC: $" . "$ltcprice";
+		$cryptoprice = "BTC: $" . "$btcprice <br /> ETH: $" . "$ethprice <br /> XRP: $" . "$xrpprice <br /> BCH: $" . "$bchprice <br /> EOS: $" . "$eosprice <br /> LTC: $" . "$ltcprice";
     }
 		// Bitcoin only
 	if($mybb->settings['cryptoprice_2'] == 1)
@@ -217,9 +234,14 @@ function cryptoprice()
 	if($mybb->settings['cryptoprice_5'] == 1)
     {
 		$cryptoprice = "BCH: $" . "$bchprice";
+	}
+		// Eosio only
+	if($mybb->settings['cryptoprice_6'] == 1)
+    {
+		$cryptoprice = "EOS: $" . "$eosprice";
     }
 		// Litecoin only
-	if($mybb->settings['cryptoprice_6'] == 1)
+	if($mybb->settings['cryptoprice_7'] == 1)
     {
 		$cryptoprice = "LTC: $" . "$ltcprice";
     }
