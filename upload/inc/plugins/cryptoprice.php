@@ -4,7 +4,7 @@
  * Website: https://wallbb.co.uk
  *
  * Collaborated by Nasyr
- * Website: https://welovemybb.com
+ * Website: https://community.mybb.com/user-77508.html
  *
  */
 
@@ -28,9 +28,9 @@ function cryptoprice_info()
 	return array(
 		"name"			=> "Crypto Price",
 		"description"	        => "Displays the current Crypto Prices for multiple coins",
-		"website"		=> "https://wallbb.co.uk",
+		"website"		=> "https://github.com/Admixing/CryptoPrice-MyBB",
 		"author"		=> "WallBB & Nasyr",
-		"authorsite"	        => "https://wallbb.co.uk",
+		"authorsite"	        => "https://github.com/Admixing/CryptoPrice-MyBB",
 		"version"		=> "1.0",
 		//"guid" 		=> "",
 		"codename"		=> "cryptoprice",
