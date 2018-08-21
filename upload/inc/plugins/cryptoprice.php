@@ -124,10 +124,10 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_6);
 	
-	// Enable litecoin only to show
+	// Enable steller only to show
 	$cryptoprice_7 = array(
         'name' => 'cryptoprice_7',
-        'title' => 'Display Litecoin Only?',
+        'title' => 'Display Steller Only?',
         'description' => 'Do you want to display Litecoin?',
         'optionscode' => 'yesno',
         'value' => '0',
@@ -205,10 +205,10 @@ function cryptoprice()
   $usd_price = 10;     # Let cost of elephant be 10$
   $eos_price = round( $usd_price / $eosprice , 8);
   
-  // Litecoin price
-  $ltcprice = $data[5]["price_usd"];    
+  // Steller price
+  $xlmprice = $data[5]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
-  $litecoin_price = round( $usd_price / $ltcprice , 8);
+  $xlmprice_price = round( $usd_price / $xlmprice , 8);
 
 		// All coins online
     if($mybb->settings['cryptoprice_1'] == 1)
@@ -240,10 +240,10 @@ function cryptoprice()
     {
 		$cryptoprice = "EOS: $" . "$eosprice";
     }
-		// Litecoin only
+		// Steller only
 	if($mybb->settings['cryptoprice_7'] == 1)
     {
-		$cryptoprice = "LTC: $" . "$ltcprice";
+		$cryptoprice = "XLM: $" . "$xlmprice";
     }
 	return true;
 }
