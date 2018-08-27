@@ -213,7 +213,7 @@ function cryptoprice()
 		// All coins online
     if($mybb->settings['cryptoprice_1'] == 1)
     {
-		$cryptoprice = "BTC: $" . "$btcprice <br /> ETH: $" . "$ethprice <br /> XRP: $" . "$xrpprice <br /> BCH: $" . "$bchprice <br /> EOS: $" . "$eosprice <br /> LTC: $" . "$ltcprice";
+		$cryptoprice = "BTC: $" . "$btcprice <br /> ETH: $" . "$ethprice <br /> XRP: $" . "$xrpprice <br /> BCH: $" . "$bchprice <br /> EOS: $" . "$eosprice <br /> XLM: $" . "$xlmprice";
     }
 		// Bitcoin only
 	if($mybb->settings['cryptoprice_2'] == 1)
