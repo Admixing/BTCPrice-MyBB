@@ -38,6 +38,6 @@ Bugs happen, lets fix them all right?
 
 
 ## Contact Details & Links
-<ul><li><a href="#" target="_blank">Official MyBB Release</a></li></ul>
+<ul><li><a href="https://community.mybb.com/mods.php?action=view&pid=1142" target="_blank">Official MyBB Release</a></li></ul>
 <ul><li><a href="https://community.mybb.com/user-77508.html" target="_blank">MyBB Profile</a> (contact me)</li></ul>
 <ul><li><a href="https://twitter.com/Admixing" target="_blank">My Twitter</a> (contact me)</li></ul>
