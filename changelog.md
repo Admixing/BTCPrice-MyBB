@@ -15,3 +15,8 @@
 
 1. New coins added to the plugin: Eosio
 2. Further coded into the core code to display all or selected.
+
+17/12/2018
+
+1. Removed both Bitcoin-Cash and Litecoin.
+2. Added Stellar and Tether to the system.
