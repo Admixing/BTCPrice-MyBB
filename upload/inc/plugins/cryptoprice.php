@@ -184,31 +184,31 @@ function cryptoprice()
   $btcprice = $data[0]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $bitcoin_price = round( $usd_price / $btcprice , 8);
+  
+	// Ripple price
+  $xrpprice = $data[1]["price_usd"];    
+  $usd_price = 10;     # Let cost of elephant be 10$
+  $ripple_price = round( $usd_price / $xrpprice , 8);
 	
 	// Ethereun price
-  $ethprice = $data[1]["price_usd"];    
+  $ethprice = $data[2]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $ethereum_price = round( $usd_price / $ethprice , 8);
   
-	// Ripple price
-  $xrpprice = $data[2]["price_usd"];    
+  // Stellar price
+  $xlmprice = $data[3]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
-  $ripple_price = round( $usd_price / $xrpprice , 8);
-  
-  // Bitcoin-Cash price
-  $bchprice = $data[3]["price_usd"];    
-  $usd_price = 10;     # Let cost of elephant be 10$
-  $bitcoincash_price = round( $usd_price / $bchprice , 8);
+  $xlm_price = round( $usd_price / $xlmprice , 8);
   
   // Eosio  price
   $eosprice = $data[4]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
   $eos_price = round( $usd_price / $eosprice , 8);
   
-  // Steller price
-  $xlmprice = $data[5]["price_usd"];    
+  // Tether price
+  $usdtprice = $data[5]["price_usd"];    
   $usd_price = 10;     # Let cost of elephant be 10$
-  $xlmprice_price = round( $usd_price / $xlmprice , 8);
+  $usdt_price = round( $usd_price / $usdtprice , 8);
 
 		// All coins online
     if($mybb->settings['cryptoprice_1'] == 1)
@@ -220,30 +220,30 @@ function cryptoprice()
     {
 		$cryptoprice = "BTC: $" . "$btcprice";
     }
-		// Ethereum only
-	if($mybb->settings['cryptoprice_3'] == 1)
-    {
-		$cryptoprice = "ETH: $" . "$ethprice";
-    }
 		// Ripple only
-	if($mybb->settings['cryptoprice_4'] == 1)
+	if($mybb->settings['cryptoprice_3'] == 1)
     {
 		$cryptoprice = "XRP: $" . "$xrpprice";
     }
-		// Bitcoin-Cash only
+		// Ethereum only
+	if($mybb->settings['cryptoprice_4'] == 1)
+    {
+		$cryptoprice = "ETH: $" . "$ethprice";
+    }
+		// Steller only
 	if($mybb->settings['cryptoprice_5'] == 1)
     {
-		$cryptoprice = "BCH: $" . "$bchprice";
-	}
+		$cryptoprice = "XLM: $" . "$xlmprice";
+    }
 		// Eosio only
 	if($mybb->settings['cryptoprice_6'] == 1)
     {
 		$cryptoprice = "EOS: $" . "$eosprice";
     }
-		// Steller only
+		// Tether only
 	if($mybb->settings['cryptoprice_7'] == 1)
     {
-		$cryptoprice = "XLM: $" . "$xlmprice";
+		$cryptoprice = "USDT: $" . "$usdtprice";
     }
 	return true;
 }
