@@ -100,11 +100,11 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_4);
 	
-	// Enable bitcoin-cash only to show
+	// Enable Stellar only to show
 	$cryptoprice_5 = array(
         'name' => 'cryptoprice_5',
-        'title' => 'Display Bitcoin-Cash Only?',
-        'description' => 'Do you want to display Bitcoin-Cash?',
+        'title' => 'Display Stellar Only?',
+        'description' => 'Do you want to display Stellar?',
         'optionscode' => 'yesno',
         'value' => '0',
         'disporder' => 5,
@@ -116,7 +116,7 @@ function cryptoprice_install()
 	$cryptoprice_6 = array(
         'name' => 'cryptoprice_6',
         'title' => 'Display EOS Only?',
-        'description' => 'Do you want to display EOS?',
+        'description' => 'Do you want to display Eosio?',
         'optionscode' => 'yesno',
         'value' => '0',
         'disporder' => 6,
@@ -124,11 +124,11 @@ function cryptoprice_install()
     );
     $db->insert_query('settings', $cryptoprice_6);
 	
-	// Enable steller only to show
+	// Enable Tether only to show
 	$cryptoprice_7 = array(
         'name' => 'cryptoprice_7',
         'title' => 'Display Steller Only?',
-        'description' => 'Do you want to display Litecoin?',
+        'description' => 'Do you want to display Tether?',
         'optionscode' => 'yesno',
         'value' => '0',
         'disporder' => 7,
@@ -230,7 +230,7 @@ function cryptoprice()
     {
 		$cryptoprice = "ETH: $" . "$ethprice";
     }
-		// Steller only
+		// Stellar only
 	if($mybb->settings['cryptoprice_5'] == 1)
     {
 		$cryptoprice = "XLM: $" . "$xlmprice";
