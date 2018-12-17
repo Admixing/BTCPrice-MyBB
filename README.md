@@ -21,12 +21,12 @@ Originally developed to be a Bitcoin plugin only by <a href="https://github.com/
 Here is the list of currently supported coins.
 <details> 
   <summary>Supported Coins</summary>
-  <ul><li>Bitcoin</li> <li>Ethereum</li> <li>Ripple</li> <li>Bitcoin-Cash</li> <li>Eosio</li> <li>Litecoin</li></ul>
+  <ul><li>Bitcoin</li> <li>Ethereum</li> <li>Ripple</li> <li>Tether</li> <li>Eosio</li> <li>Stellar</li></ul>
 </details>
 <br />
 <details> 
   <summary>Coming Soon</summary>
-  <ul><li>Cardano</li> <li>Stellar</li> <li>Dash</li> <li>Ethereum-Classic</li> <li>Monero</li> <li>zCash</li> <li>Iota</li></ul>
+  <ul><li>None yet</li></ul>
 </details>
 
 ## Bugs
